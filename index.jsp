@@ -1,4 +1,6 @@
 
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 
 <html>
 
@@ -121,7 +123,7 @@
 								<p class="mb-0">A yellow pencil with envelopes on a clean,
 									blue backdrop!</p>
 							</div>
-						</div> <img class="img-fluid" src="assets/img/portfolio/portfolio-11.jpg" alt="..." />
+						</div> <img id="ksk" class="img-fluid" src="assets/img/portfolio/portfolio-11.jpg" alt="..." />
 					</a>
 				</div>
 				<div class="col-lg-6">
@@ -187,7 +189,7 @@
 	<section class="content-section bg-primary text-white">
 		<div class="container px-4 px-lg-5 text-center">
 			<h2 class="mb-4">The buttons below are impossible to resist...</h2>
-			<a class="btn btn-xl btn-light me-4" href="#!">Click Me!</a> <a
+			<a class="btn btn-xl btn-light me-4" href="#!">계속해서 업데이트 됩니다.!</a> <a
 				class="btn btn-xl btn-dark" href="#!">Look at Me!</a>
 					<button type="button" class="btn btn-primary" data-toggle="modal" id="btn_modal"
 				data-target="#exampleModalLong">Launch demo modal</button>
@@ -199,14 +201,25 @@
 				<div class="modal-dialog" role="document">
 					<div class="modal-content">
 						<div class="modal-header">
-							<h5 class="modal-title" id="exampleModalLongTitle">Modal
+							<h5 style="color: black;" class="modal-title" id="exampleModalLongTitle">Modal
 								title</h5>
 							<button type="button" class="close" data-dismiss="modal"
 								aria-label="Close">
 								<span aria-hidden="true">&times;</span>
 							</button>
 						</div>
-						<div class="modal-body">...</div>
+						<div class="modal-body">
+						 <img class="img-fluid" src="assets/img/ksk/img1.jpg" alt="..." />
+						 <img class="img-fluid" src="assets/img/ksk/img2.jpg" alt="..." />
+						 <img class="img-fluid" src="assets/img/ksk/img3.jpg" alt="..." />
+						 <img class="img-fluid" src="assets/img/ksk/img4.jpg" alt="..." />
+						 <img class="img-fluid" src="assets/img/ksk/img5.jpg" alt="..." />
+						 <img class="img-fluid" src="assets/img/ksk/img6.jpg" alt="..." />
+						 <img class="img-fluid" src="assets/img/ksk/img7.jpg" alt="..." />
+						 <img class="img-fluid" src="assets/img/ksk/img8.jpg" alt="..." />
+						 <img class="img-fluid" src="assets/img/ksk/img9.jpg" alt="..." />
+						 <img class="img-fluid" src="assets/img/ksk/img10.jpg" alt="..." />
+						</div>
 						<div class="modal-footer">
 							<button type="button" class="btn btn-secondary"
 								data-dismiss="modal">Close</button>
@@ -250,10 +263,18 @@
 		src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
 	<script src="js/scripts.js"></script>
 	<script type="text/javascript">
-	$('#btn_modal').on('click', function(){
-		$('#exampleModalLong').modal('show');
-		});
+
+
+		$('.img-fluid').on('click' , function(){
+			$('#exampleModalLong').modal('hide');
+		});	
+		$('.portfolio-item').on('click' , function(){
 		
+			alert($('.portfolio-item').children('.img-fluid').attr('id'))	;
+			
+			$('#exampleModalLong').modal('show');
+		});	
+
         </script>
 </body>
 </html>
