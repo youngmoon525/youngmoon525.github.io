@@ -298,9 +298,19 @@ figure {
 
 img,
 svg {
+	
   vertical-align: middle;
 }
 
+svg {
+	padding:20px;
+  vertical-align: middle;
+}
+
+.service-icon > svg{
+	
+padding:30px;
+}
 table {
   caption-side: bottom;
   border-collapse: collapse;
