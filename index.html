@@ -1,4 +1,3 @@
-
 <html>
 
 <head>
@@ -24,10 +23,30 @@
 <!-- Core theme CSS (includes Bootstrap)-->
 <link href="css/styles.css" rel="stylesheet" />
 <style type="text/css">
+
+	.popup {
+		
+		display: inline-block;
+  position: sticky;
+  top:0px;
+  width: 300px;
+  height: 20px;
+  background: #000;
+  color: white;
+  opacity: 80%;
+  margin-top: -100px;
+padding-bottom: 40px
+}
+
+
+
+
 </style>
 </head>
 <body id="page-top">
-	<!-- Navigation-->
+	<!-- Navigation-->a
+
+	
 	<a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
 	<nav id="sidebar-wrapper">
 		<ul class="sidebar-nav">
@@ -42,33 +61,13 @@
 	<!-- Header-->
 	<header class="masthead d-flex align-items-center">
 		<div class="container px-4 px-lg-5 text-center">
-			<img class="mb-1" src="assets\img\logo.png" />
-				<h3 class="mb-5">
-				<em style="margin: 20px;">  &nbsp </em>
-			</h3>
-			<h3 class="mb-5">
-				<em style="margin: 20px;">수강생 Android , Spring Uploading</em>
-			</h3>
-			<a class="btn btn-primary btn-xl" href="#about">다음으로 </a>
+			<div class="mb-1" />
+		
 		</div>
-	</header>
-	<!-- About-->
-	<section class="content-section bg-light" id="about">
-		<div class="container px-4 px-lg-5 text-center">
-			<div class="row gx-4 gx-lg-5 justify-content-center">
-				<div class="col-lg-10">
-					<h2>개발자 과정 모집중입니다</h2>
-					<p class="lead mb-5">
-						평소 컴퓨터에 관심이 많거나 프로그래밍이 재밌다면 바로 수강 신청해주세요. <a
-							href="http://hanuledu.co.kr/">한울홈페이지</a> !
-						 <a
-							href="https://open.kakao.com/o/sRUu4hvd">오픈 채팅</a> !
-					</p>
-					<a class="btn btn-dark btn-xl" href="#services">개발자 과정 과목</a>
-				</div>
-			</div>
-		</div>
-	</section>
+			
+	<a class="btn btn-dark btn-xl" href="#services">다음으로 </a>
+				</header>
+
 	<!-- Services-->
 	<section class="content-section bg-primary text-white text-center"
 		id="services">
@@ -117,12 +116,52 @@
 		</div>
 	</section>
 	<!-- Call to Action-->
-	<section class="content-section bg-primary text-white">
+	<section class="content-section bg-light text-white">
 		<div class="container px-4 px-lg-5 text-center">
-			<h2 class="mb-4">더 많은 작품은 유튜브 검색 또는</h2>
-			 <a
-				class="btn btn-xl btn-dark" href="http://hanuledu.co.kr/">학교 홈페이지 방문!</a>
+			<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+				<div class="carousel-indicators">
+				  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+				  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+				</div>
+				<div class="carousel-inner">
+				  <div class="carousel-item active">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/HXOkIsIbfw0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				  </div>
+				  <div class="carousel-item">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/zFoxRHOdFdk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	
+				  </div>
+				  <div class="carousel-item">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/4MP5k-Y3DHQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				  </div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+				  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				  <span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+				  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				  <span class="visually-hidden">Next</span>
+				</button>
+			  </div>
+
+		
+				
 			
+			  <div class="container px-4 px-lg-5 text-center">
+				<div class="row gx-4 gx-lg-5 justify-content-center">
+					<div class="col-lg-12" style="margin-top: 30px;">
+					
+					
+						<a class="btn btn-dark btn-xl" style="margin: 10px;" href="http://hanuledu.co.kr/">한울홈페이지 방문하기</a>
+						
+						<a class="btn btn-dark btn-xl" style="margin: 10px;"  href="https://open.kakao.com/o/sRUu4hvd">오픈 채팅 상담하기</a>
+						
+						<a class="btn btn-dark btn-xl" style="margin: 10px;"  href="https://www.youtube.com/results?search_query=%ED%95%9C%EC%9A%B8%EC%A7%81%EC%97%85%EC%A0%84%EB%AC%B8%ED%95%99%EA%B5%90">유튜브 더보기..</a>
+					</div>
+				</div>
+	
 			<!-- Modal -->
 			<div class="modal fade" id="exampleModalLong" tabindex="-1"
 				role="dialog" aria-labelledby="exampleModalLongTitle"
@@ -133,11 +172,12 @@
 							<h5 style="color: black;" class="modal-title"
 								id="exampleModalLongTitle">Modal title</h5>
 							<button type="button" class="close" data-dismiss="modal"
-								aria-label="Close" onclick="potHide();">
+								aria-label="Close" onclick="portHide();">
 								<span aria-hidden="true">&times;</span>
 							</button>
 						</div>
 						<div class="modal-body" ></div>
+
 						<div class="modal-footer">
 							<button type="button" class="btn btn-secondary"
 								data-dismiss="modal" onclick="portHide();">닫기</button>
@@ -149,7 +189,6 @@
 		</div>
 	</section>
 	<!-- Map-->
-
 
 	<div class="map" id="contact">
 		<iframe
@@ -255,8 +294,8 @@
 		
 		function rtnMainDiv( childData) {
 			var html = '';
-			
-			html = '<div class="col-lg-6">'
+
+			html = '<div class="col-lg-6"  >'
 			+'<a class="portfolio-item" id="'   +  childData.nickname  +'" href="#!" onClick="portShow(this);">'
 			+'	<div class="caption"   >'
 			+'		<div class="caption-content" >'
@@ -272,7 +311,8 @@
 		
 		function rtnSubDiv( id ) {
 			var html = '';
-			
+			html  ='<a class="popup" id="popup">화면을 다시 클릭 하면 닫힙니다.</a>';
+							$('.modal-body').append(html);
 			firebase.database().ref(user_ref+ '/' + id + '/sub')
 			.on(
 					'child_added',
@@ -285,7 +325,7 @@
 
 					
 						if(childData.subimg == null){
-							
+						
 						}else{
 							
 							html  = '<img class="img-fluid" src= ' +  childData.subimg+' onClick="portHide();"  href="#!"/>';
@@ -313,6 +353,11 @@
 			$('.modal-body').empty();
 			rtnSubDiv($(id).attr('id'));
 			$('#exampleModalLong').modal('show');
+
+				
+
+
+
 		}
 		
 		
@@ -320,4 +365,3 @@
 
 </body>
 </html>
-
