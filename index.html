@@ -400,6 +400,13 @@
     var index = 1 ;
     var htmlChild = '';
     var totalCnt = 1;
+    var divCnt = 8;
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+       divCnt = 4;
+    }else{
+       divCnt = 8;
+    }
+
 		function initBase() {
 			firebase.database().ref(user_ref).once('value', function(snapshot) {
 			
@@ -427,8 +434,8 @@
                         if(childData.mainimg != null){
                           htmlChild += rtnMainDiv(childData , index);
                    
-                        if(index%8 == 0){
-                          if(index==8){
+                        if(index%divCnt == 0){
+                          if(index==divCnt){
                             htmlChild = '<div class="row gy-5 posts-list display1"  style="padding: 2px;" >'  + htmlChild;
                           }else{
                             htmlChild = '<div class="row gy-5 posts-list display' + totalCnt+'"  style="padding: 2px; display:none;">'  + htmlChild;
@@ -437,8 +444,8 @@
                           htmlChild += '</div>'
                           $('#portparent').append(htmlChild);
                           htmlChild=''
-                          if(index%8==0){
-                            if(index==8){
+                          if(index%divCnt==0){
+                            if(index==divCnt){
                               $('.pagin').append('<li class="li'+totalCnt+'  active"><a  href="#!" onClick="setvisible('+ totalCnt + ')";>' + totalCnt + '</a></li>');
                             }else{
                               $('.pagin').append('<li class="li'+totalCnt+'"><a  href="#!" onClick="setvisible('+ totalCnt + ')";>' + totalCnt + '</a></li>');
