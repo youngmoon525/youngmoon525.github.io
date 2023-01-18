@@ -377,7 +377,11 @@
 
   <script type="text/javascript">
 
-		
+		$(document).ready(function(){
+        $(window).resize(function(){
+          location.reload();
+        });
+    });
 		const firebaseConfig = {
 
 			apiKey : "AIzaSyCSyvBMYmqTwJwBInD8sqMd6VVgDToukL8",
